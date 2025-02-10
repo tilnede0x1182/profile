@@ -1,0 +1,108 @@
+body {
+  font-family: Open Sans, sans-serif;
+  background-color: #abbddf;
+  color: #0e545c;
+  padding: 20px;
+  text-align: center;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: Complet, sans-serif;
+  color: #0e545c;
+  margin: 10px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #6a31a2c7;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #a23131;
+}
+
+/* Image toujours ronde */
+#profile-pic {
+  width: 100%;
+  max-width: 170px;
+	padding: 25px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+/* Card centrée, largeur adaptative et hauteur fixe */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #EAEAEA;
+  border-radius: 5px;
+  box-shadow: 0 0 16px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin: 25px auto;
+  max-width: 500px;
+  width: 90%;
+  min-width: 250px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.card-white {
+  background: white;
+  padding: 30px;
+  border: 1px solid lightgrey;
+}
+
+i {
+  font-size: 50px;
+	color: #53b463;
+}
+
+p {
+  font-size: 20px;
+  margin: 0 0 10px 0;
+}
+
+@media (max-width: 960px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* Pour un écran < 720px, cette classe CSS s'applique */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* Pour un écran < 540px, cette classe CSS s'applique */
+  .container {
+    width: 300px;
+  }
+}
