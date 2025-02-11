@@ -1,37 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="fr">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Mon CV - Cyrille de Gasquet</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="style.css">
-    <title>My profil - Cyrille de Gasquet</title>
-  </head>
-  <body>
-		<div class="container">
-			<div class="card">
-				<h1>Hello, I'm Cyrille</h1>
-				<img id="profile-pic" src="https://scontent-cdg4-2.xx.fbcdn.net/v/t39.30808-1/300622916_10222365757798189_5381306804189963358_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=107&ccb=1-7&_nc_sid=e99d92&_nc_ohc=rMTf9CSEGk4Q7kNvgGzuSZk&_nc_zt=24&_nc_ht=scontent-cdg4-2.xx&_nc_gid=AqIJCEseebGAmtsN3toSaJk&oh=00_AYC8fJ98KV4UjYh7m6FfAMEQnXoSfkmV0fbL_4Ses1c7Cg&oe=67AFD620" alt="Profil Cyrille de Gasquet">
-				<p>
-				I'm learning to code.
-				</p>
-				</div>
-				<div class="card">
-				<ul>
-					<h2>Follow me</h2>
-					<li>
-						<a href="https://github.com/tilnede0x1182">
-							<i class="fab fa-github-square"></i>
-						</a>
-					</li>
-					<li>
-						<a href="https://www.linkedin.com/in/cyrille-de-gasquet-3ab219211/">
-							<i class="fa-brands fa-linkedin"></i>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-  </body>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        html, body {
+            height: 100%;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        body {
+            background-image: url('./images/Image\ Programmation\ \(3\).jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            text-align: center;
+            padding: 20px;
+						overflow: auto;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Complet', sans-serif;
+            color: #1f4893;
+            margin: 10px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #6a31a2c7;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #a23131;
+        }
+
+        #profile-pic {
+            width: 100%;
+            max-width: 170px;
+            padding: 15px;
+            aspect-ratio: 1 / 1;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto;
+        }
+
+        .container {
+						margin: 10px 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+						gap: 10px;
+						margin: 10px;
+        }
+
+        .card {
+						display: block;
+						flex-direction: column;
+						gap: 1px;
+            background-color: #ffffff;
+            border: 1px solid #EAEAEA;
+            border-radius: 5px;
+            box-shadow: 0 0 16px rgba(94, 76, 76, 0.1);
+            padding: 20px;
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+						margin: 10px;
+        }
+
+        .card ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .card li {
+            margin-bottom: 8px;
+        }
+
+				.card ul li {
+					display: block;
+				}
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-icons i {
+            font-size: 50px;
+            color: #1c3667;
+        }
+
+        p {
+            font-size: 18px;
+            color: #0e545c;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Carte Profil -->
+        <div class="card">
+            <h1>Bonjour, je suis Cyrille</h1>
+            <img id="profile-pic" src="https://scontent-cdg4-2.xx.fbcdn.net/v/t39.30808-1/300622916_10222365757798189_5381306804189963358_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=107&ccb=1-7&_nc_sid=e99d92&_nc_ohc=rMTf9CSEGk4Q7kNvgGzuSZk&_nc_zt=24&_nc_ht=scontent-cdg4-2.xx&_nc_gid=AqIJCEseebGAmtsN3toSaJk&oh=00_AYC8fJ98KV4UjYh7m6FfAMEQnXoSfkmV0fbL_4Ses1c7Cg&oe=67AFD620" alt="Profil Cyrille de Gasquet">
+            <p>Passionné par le développement web, j’ai étudié plusieurs technologies et frameworks. Mon parcours allie développement full-stack et administration réseau.</p>
+        </div>
+
+        <!-- Carte Expérience -->
+        <div class="card">
+            <h2>Expériences professionnelles</h2>
+            <ul>
+                <li><strong>Développeur Web - Hypnotime</strong> (3 mois, 2023)</li>
+                <p>Développement d’un site de mise en relation professionnelle en NodeJS et JavaScript.</p>
+
+                <li><strong>Conseiller Informatique - Sherpas Advisory</strong> (4 mois, 2021-2022)</li>
+                <p>Automatisation de tâches sous Excel et NodeJS avec Puppeteer.</p>
+
+                <li><strong>Technicien Réseau - Hôpital Européen Georges Pompidou</strong> (Stage, 2019)</li>
+                <p>Administration réseau et développement d’un outil de gestion de tickets en PHP.</p>
+            </ul>
+        </div>
+
+        <!-- Carte Formation -->
+        <div class="card">
+            <h2>Formation</h2>
+						<ul>
+								<li><strong>Le Wagon</strong> (Bootcamp Fullstack Web - En cours, 2025)</li>
+								<li><strong>Doranco Ecole Sup' des Tech Créatives</strong> (Bachelor Développement Web, 2023)</li>
+								<li><strong>CNED</strong> (BTS SIO SISR - Gestion Réseau, 2020)</li>
+								<li><strong>Université Paris Cité</strong> (Licence Informatique, L1 & L2 validées)</li>
+						</ul>
+        </div>
+
+        <!-- Carte Compétences -->
+        <div class="card">
+            <h2>Compétences</h2>
+            <ul>
+                <li>Développement Web (HTML, CSS, JavaScript, PHP, NodeJS, ReactJS)</li>
+                <li>Base de données (MongoDB, MySQL, SQL)</li>
+                <li>Gestion de projet Agile & Git (GitHub, GitLab, Git Bash)</li>
+                <li>Développement Front-end et Back-end</li>
+            </ul>
+        </div>
+
+        <!-- Carte Réseaux sociaux -->
+        <div class="card">
+            <h2>Suivez-moi</h2>
+            <div class="social-icons">
+                <a href="https://github.com/tilnede0x1182"><i class="fab fa-github-square"></i></a>
+                <a href="https://www.linkedin.com/in/cyrille-de-gasquet-3ab219211/"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
