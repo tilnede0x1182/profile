@@ -6,6 +6,9 @@ html, body {
 }
 
 body {
+	display: flex;
+  justify-content: space-evenly;
+
 	background-image: url('./images/Image\ Programmation\ \(3\).jpg');
 	background-size: cover;
 	background-position: center;
@@ -95,4 +98,19 @@ p {
   font-size: 20px;
   margin: 0 0 10px 0;
 	color:  #0e545c;;
+}
+
+@media (max-width: 960px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+
+}
+
+@media (max-width: 720px) {
+  /* Pour un écran < 720px, cette classe CSS s'applique */
+
+}
+
+@media (max-width: 540px) {
+  /* Pour un écran < 540px, cette classe CSS s'applique */
+
 }
