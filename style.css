@@ -6,8 +6,8 @@ html, body {
 }
 
 body {
-	display: flex;
-  justify-content: space-evenly;
+	/* display: flex;
+  justify-content: space-evenly; */
 
 	background-image: url('./images/Image\ Programmation\ \(3\).jpg');
 	background-size: cover;
